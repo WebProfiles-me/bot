@@ -4,7 +4,8 @@
   "description": "The official WebProfiles Discord bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pull": "git fetch origin && git reset --hard origin/main && npm i"
   },
   "dependencies": {
     "chalk": "^4.1.1",
