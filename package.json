@@ -1,6 +1,6 @@
 {
   "name": "bot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The official WebProfiles Discord bot",
   "main": "index.js",
   "scripts": {
