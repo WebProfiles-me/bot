@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.1",
-    "discord.js": "^13.0.0-dev.d310e4f.1627560163",
+    "discord.js": "13.0.0-dev.2675b08.1627646567",
     "dotenv": "^10.0.0",
     "humanize-duration": "^3.27.0",
     "klaw": "^3.0.0",
