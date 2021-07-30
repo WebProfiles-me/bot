@@ -39,7 +39,8 @@ module.exports = async (client) => {
       }
 
       client.commands.set(pull.name, pull);
-      console.log(chalk.blueBright(`Loaded `) + chalk.blueBright.bold(`${pull.name} `) + chalk.bgBlueBright.black(`(${find.id})`))
+      var finalFetch = cmdFetch.find((i) => i.name === pull.name.toLowerCase());
+      console.log(chalk.blueBright(`Loaded `) + chalk.blueBright.bold(`${pull.name} `) + chalk.bgBlueBright.black(`(${finalFetch.id})`))
     }
   }
 };
