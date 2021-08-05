@@ -57,6 +57,9 @@ module.exports = {
         )}\n<:twitter:870466507539349514> ${checkSocial(
           user.socials.twitter[0],
           user
+        )}\n<:reddit:872880556742938677> ${checkSocial(
+          user.socials.reddit[0],
+          user
         )}\n<:youtube:870466576225300481> ${checkSocial(
           user.socials.youtube[0],
           user
