@@ -51,6 +51,9 @@ module.exports = {
         `<:discord:870466372461817907> ${checkSocial(
           user.socials.discord[0],
           user
+        )}\n<:linkedin:873574069864366104> ${checkSocial(
+          user.socials.linkedin[0],
+          user
         )}\n<:twitch:870466444704510003> ${checkSocial(
           user.socials.twitch[0],
           user
