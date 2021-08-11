@@ -66,9 +66,6 @@ module.exports = {
         )}\n<:youtube:870466576225300481> ${checkSocial(
           user.socials.youtube[0],
           user
-        )}\n<:snapchat:870466215661940766> ${checkSocial(
-          user.socials.snapchat[0],
-          user
         )}\n<:spotify:872901438345478184> ${checkSocial(
           user.socials.spotify[0],
           user
