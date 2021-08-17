@@ -8,6 +8,11 @@ module.exports = {
 
     let embed = new Discord.MessageEmbed()
       .setTitle(`${status.page.name} Status`)
+      .setDescription(
+        `${getStatusEmoji(status.status.indicator)} ${
+          status.status.description
+        }`
+      )
       .addField(
         "Component Status",
         `<:website:870467621022203965> **Main Website:** \`${
@@ -51,4 +56,31 @@ function fetchStatusElement(component, client) {
 
   if (!componentFind) return "";
   return componentFind.id;
+}
+
+function getStatusEmoji(status) {
+  switch (status) {
+    case "none":
+    case "resolved":
+    case "operational":
+      return "<:statusgreen:877167945023893524>";
+
+    case "minor":
+    case "monitoring":
+    case "degraded_performance":
+      return "<:statusyellow:877167883610886144>";
+
+    case "major":
+    case "partial_outage":
+    case "investigating":
+      return "<:statusorange:877167801696124988>";
+
+    case "identified":
+    case "major_outage":
+    case "critical":
+      return "<:statusred:877167714274250772>";
+
+    case "postmortem":
+      return "<:statusblue:877167622809088052>";
+  }
 }
