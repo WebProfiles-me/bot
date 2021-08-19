@@ -45,7 +45,7 @@ module.exports = {
         true
       );
     }
-    embed.addField("Bio", `${user.bio || "No Bio Specified"}`)
+    embed.addField("Bio", `${user.bio || "No Bio Specified"}`);
     embed
       .addField(
         "Socials",
@@ -54,6 +54,9 @@ module.exports = {
           user
         )}\n<:linkedin:873574069864366104> ${checkSocial(
           user.socials.linkedin[0],
+          user
+        )}\n<:github:877878782797697024> ${checkSocial(
+          user.socials.github[0],
           user
         )}\n<:twitch:870466444704510003> ${checkSocial(
           user.socials.twitch[0],
