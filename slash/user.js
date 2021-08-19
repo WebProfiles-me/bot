@@ -45,6 +45,7 @@ module.exports = {
         true
       );
     }
+    embed.addField("Bio", `${user.bio || "No Bio Specified"}`)
     embed
       .addField(
         "Socials",
