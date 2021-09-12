@@ -1,10 +1,11 @@
 {
   "name": "bot",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "The official WebProfiles Discord bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "pull": "git fetch origin && git reset --hard origin/main && yarn install"
   },
   "dependencies": {

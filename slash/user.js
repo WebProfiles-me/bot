@@ -38,13 +38,6 @@ module.exports = {
       `${user.username} (\`${user.id}\`)`,
       true
     );
-    if (user.caards_username) {
-      embed.addField(
-        "<:caards:870468812171014196> Caards",
-        `[${user.caards_username}](https://crds.cc/${user.caards_username})`,
-        true
-      );
-    }
     embed.addField("Bio", `${user.bio || "No Bio Specified"}`);
     embed
       .addField(
