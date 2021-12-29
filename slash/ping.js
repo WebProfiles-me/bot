@@ -4,7 +4,7 @@ module.exports = {
   name: "ping",
   description: "Send a ping request to Discord's API",
   run: async (client, interaction) => {
-    return interaction.defer().then(async (msg) => {
+    return interaction.deferReply().then(async (msg) => {
       let ping = new Date().getTime() - interaction.createdTimestamp;
 
       let embed = new Discord.MessageEmbed()
